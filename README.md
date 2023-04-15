@@ -1,4 +1,5 @@
 Васёв А.В.
+
 Система мониторинга Zabbix. Часть 2
 
 Задание 1
@@ -28,14 +29,23 @@
 ![alt text](https://github.com/rus42/zabbix2/blob/main/Task_6.2.png)
 
 import sys
+
 import os
+
 import re
+
 import datetime
+
 if (sys.argv[1] == '1'):
+
     	print(f"VasevAV")
+
 elif (sys.argv[1] == '2'):
+
     	print (datetime.date.today())
+
 else:
+
     	print(f"netology")
 
 Задание 7
@@ -45,22 +55,36 @@ else:
 ![alt text](https://github.com/rus42/zabbix2/blob/main/Task_7.2.png)
 
 import sys
-import os
-import re
-import datetime
-if (sys.argv[1] == '-ping'):
-    	result=os.popen("ping -c 1 " + sys.argv[2]).read()
-    	result=re.findall(r"time=(.*) ms", result)
-    	print(result[0])
-elif (sys.argv[1] == '-simple_print'):
-    	print(sys.argv[2])
-elif (sys.argv[1] == '1'):
-    	print(f"VasevAV")
-elif (sys.argv[1] == '2'):
-    	print (datetime.date.today())
-else:
-    	print(f"netology")
 
+import os
+
+import re
+
+import datetime
+
+if (sys.argv[1] == '-ping'):
+
+    	result=os.popen("ping -c 1 " + sys.argv[2]).read()
+
+    	result=re.findall(r"time=(.*) ms", result)
+
+    	print(result[0])
+
+elif (sys.argv[1] == '-simple_print'):
+
+    	print(sys.argv[2])
+
+elif (sys.argv[1] == '1'):
+
+    	print(f"VasevAV")
+
+elif (sys.argv[1] == '2'):
+
+    	print (datetime.date.today())
+
+else:
+
+    	print(f"netology")
 
 Задание 8
 
